@@ -1,5 +1,7 @@
-*INCLUDE - you can use this diectly in the enhacmenet implementation block*
-
+******************************************************************************
+*INCLUDE - you can use this diectly in the enhacmenet implementation block   *
+*Internal table T_ERRPROT has the messages which are being aligned in runtime*
+*******************************************************************************
 CONSTANTS: c_msgid       TYPE char2  VALUE 'M8',
            c_msgno(3)    TYPE n      VALUE '286',
            c_error       TYPE char1  VALUE 'E',
