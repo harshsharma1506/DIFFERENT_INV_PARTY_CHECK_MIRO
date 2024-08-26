@@ -16,7 +16,7 @@ DATA:      t_set         TYPE TABLE OF rgsb4,
            lv_tabix      TYPE sy-tabix,
            lv_lifnr_chk  TYPE lifnr.
 
-CALL METHOD z_inv_prty_cls=>inv_prty_bukrs_chk "copy the code of method inside here 
+CALL METHOD z_inv_prty_cls=>Z_FI_INV_PRTY_METHOD "copy the code of method inside here 
   EXPORTING
     i_tcode = sy-tcode
     i_bukrs = i_rbkpv-bukrs
