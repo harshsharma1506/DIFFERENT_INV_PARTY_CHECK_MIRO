@@ -13,8 +13,13 @@ After implementation of the point in FM - MRM_FINAL_CHECK, you can write your lo
 ( take it as an include we can copy past in enhc implementation directly ). Let us discuss the conditions now - 
 
 1# This conversion should be done only when the BUKRS is one of 25 values provided by Customer ( we will be taking it as dummy ) 
-2# For few vendors the conversion should not happen , for ex - if in BUKRS - XX00, vendor is changed by value - 000145, then it should allow , so for this also there should be 
-   an exception coded 
+2# For few vendors the conversion should not happen , for ex - if in BUKRS - XX00, vendor is changed by value - 000145, then it should allow , so for this also there should be an exception case to release them. 
+
+For company codes , we will maintain the entry in let's say TVARVC , with name of the variable as 'Z_CC_INV_PRTY_CHK'. 
+For Vendore lets make a set via GS01 called - 'Z_INV_PRTY_LIFNR_EXCEPT'.
+
+![image](https://github.com/user-attachments/assets/7e64a6f4-d5a8-4b2e-86f0-edbc0f8240c0)
+
 
 ### Before 
 
